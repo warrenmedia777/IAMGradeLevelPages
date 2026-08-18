@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>I AM Caring and Curious — Teacher One-Page Essentials, Grades K–12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:       #0a1628;
+  --navy-mid:   #112040;
+  --navy-light: #1e3560;
+  --cream:      #f7f3ec;
+  --cream-dark: #ede8df;
+  --parchment:  #faf8f4;
+  --ink:        #1a2640;
+  --ink-mid:    #344563;
+  --ink-light:  #5a6a84;
+  --rule:       #d8d0c4;
+
+  --blue:       #1a56db;
+  --blue-light: #dbeafe;
+  --blue-pale:  #eff6ff;
+
+  --green:      #166534;
+  --green-light:#dcfce7;
+  --green-pale: #f0fdf4;
+
+  --amber:      #b45309;
+  --amber-light:#fef3c7;
+  --amber-pale: #fffbeb;
+
+  --purple:     #5b21b6;
+  --purple-pale:#f5f3ff;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-mono:    'DM Mono', monospace;
+
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  22px;
+
+  --shadow-sm:  0 2px 8px rgba(10,22,40,.06);
+  --shadow-md:  0 8px 28px rgba(10,22,40,.10);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============ PRINT TOOLBAR (screen only) ============ */
+.print-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--navy);
+  color: white;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-md);
+}
+.print-toolbar .brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+}
+.print-toolbar .brand .i { color: #6ee7b7; }
+.print-toolbar .brand .a { color: #93c5fd; }
+.print-toolbar .brand .m { color: #fcd34d; }
+.print-toolbar button {
+  background: var(--amber);
+  color: white;
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.print-toolbar button:hover { background: #92400e; }
+
+/* ============ PAGE FRAME (screen) ============ */
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 28px auto;
+  background: var(--cream);
+  box-shadow: var(--shadow-md);
+  padding: 0.75in 0.75in;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ============ COVER ============ */
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--navy);
+  color: white;
+}
+.cover-wordmark {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 5rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.cover-wordmark .i { color: #93c5fd; }
+.cover-wordmark .a { color: #6ee7b7; }
+.cover-wordmark .m { color: #fcd34d; }
+.cover-sub {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 28px;
+}
+.cover-bar { display:flex; width: 220px; height: 6px; border-radius: 999px; overflow:hidden; margin-bottom: 40px; }
+.cover-bar span { flex: 1; }
+.cover-bar .b1 { background: #93c5fd; }
+.cover-bar .b2 { background: var(--amber); }
+.cover-bar .b3 { background: #6ee7b7; }
+.cover-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.cover-meta {
+  font-size: 0.98rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 48px;
+}
+.cover-tagline {
+  max-width: 480px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 56px;
+}
+.cover-authors {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.cover-authors strong { color: white; display:block; font-size: 1rem; letter-spacing: normal; text-transform:none; margin-bottom: 4px; font-family: var(--font-display); }
+
+/* ============ CONTENTS ============ */
+.contents-eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber); margin-bottom: 10px; }
+.contents h1 { font-family: var(--font-display); font-size: 2.2rem; color: var(--navy); margin-bottom: 32px; }
+.contents-group-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin: 24px 0 10px; }
+.contents-row { display:flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px dotted var(--rule); font-size: 0.98rem; }
+.contents-row span:last-child { color: var(--ink-light); font-family: var(--font-mono); font-size: 0.88rem; }
+
+/* ============ HOW TO USE ============ */
+.htu-eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber); margin-bottom: 10px; }
+.htu h1 { font-family: var(--font-display); font-size: 2.1rem; color: var(--navy); margin-bottom: 8px; }
+.htu .htu-dek { font-size: 1rem; color: var(--ink-mid); font-style: italic; margin-bottom: 24px; }
+.htu h2 { font-family: var(--font-display); font-size: 1.15rem; color: var(--navy); margin: 22px 0 8px; }
+.htu p { font-size: 0.92rem; color: var(--ink-mid); line-height: 1.7; margin-bottom: 10px; }
+.htu ul { margin: 6px 0 12px 20px; }
+.htu li { font-size: 0.92rem; color: var(--ink-mid); line-height: 1.7; margin-bottom: 6px; }
+.htu strong { color: var(--ink); }
+
+/* Layer-order callout */
+.layer-order {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+.layer-order .lo-step {
+  flex: 1;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  color: white;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.layer-order .lo-step .lo-num { font-family: var(--font-mono); font-size: 0.7rem; opacity: 0.7; display:block; margin-bottom: 3px; }
+.layer-order .lo-step .lo-name { font-weight: 700; font-size: 0.9rem; display:block; margin-bottom: 2px; }
+.lo-1 { background: var(--navy); }
+.lo-2 { background: var(--amber); flex: 1.15; box-shadow: 0 0 0 2px var(--amber) , 0 4px 14px rgba(180,83,9,0.35); transform: translateY(-3px); }
+.lo-3 { background: var(--green); }
+.lo-arrow { align-self: center; color: var(--ink-light); font-size: 1.1rem; }
+
+.callout {
+  background: white;
+  border-left: 4px solid var(--amber);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 14px 18px;
+  margin: 4px 0 18px;
+  box-shadow: var(--shadow-sm);
+}
+.callout p { margin-bottom: 0; font-size: 0.9rem; }
+.callout p + p { margin-top: 8px; }
+
+/* ============ THINK SHEET ============ */
+.ts-page { padding: 0.55in 0.55in; }
+.ts-header {
+  background: var(--navy);
+  border-radius: var(--radius-md);
+  padding: 20px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  color: white;
+}
+.ts-header .ts-brand { font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; }
+.ts-header .ts-brand .i { color: #93c5fd; }
+.ts-header .ts-brand .a { color: #6ee7b7; }
+.ts-header .ts-brand .m { color: #fcd34d; }
+.ts-header .ts-titles { border-left: 2px solid rgba(255,255,255,0.2); padding-left: 16px; margin-left: 16px; }
+.ts-header .ts-titles .t1 { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; }
+.ts-header .ts-titles .t2 { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-top: 2px; }
+.ts-header .ts-principle { max-width: 220px; background: rgba(255,255,255,0.08); border-radius: var(--radius-sm); padding: 10px 14px; }
+.ts-header .ts-principle .label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; color: #fcd34d; text-transform: uppercase; margin-bottom: 3px; }
+.ts-header .ts-principle .text { font-size: 0.75rem; font-style: italic; color: rgba(255,255,255,0.85); line-height: 1.4; }
+
+.ts-step {
+  background: white;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.ts-step-head {
+  background: var(--navy);
+  color: white;
+  padding: 8px 16px;
+  display:flex; align-items:center; gap:10px;
+  font-size: 0.85rem; font-weight: 700;
+}
+.ts-step-head .badge { background: white; color: var(--navy); border-radius: 999px; padding: 2px 10px; font-size: 0.68rem; font-weight: 900; letter-spacing: 0.04em; }
+.ts-step-head .note { margin-left:auto; font-weight: 400; font-style: italic; font-size: 0.75rem; color: rgba(255,255,255,0.6); }
+.ts-step-body { padding: 14px 18px; }
+.ts-field-label { font-size: 0.78rem; font-weight: 700; color: var(--ink-mid); margin-bottom: 4px; }
+.ts-line { border-bottom: 1px solid var(--rule); height: 22px; margin-bottom: 12px; }
+.ts-cols3 { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.ts-layer-block .ts-layer-title { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: white; padding: 4px 10px; border-radius: 999px; display:inline-block; margin-bottom: 8px; }
+.ts-layer-block.l1 .ts-layer-title { background: var(--navy); }
+.ts-layer-block.l2 .ts-layer-title { background: var(--amber); }
+.ts-layer-block.l3 .ts-layer-title { background: var(--green); }
+.ts-check-item { display:flex; gap: 8px; align-items:flex-start; margin-bottom: 8px; font-size: 0.85rem; }
+.ts-check-item .box { width: 13px; height: 13px; border: 1.5px solid var(--ink-light); border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
+.ts-check-item .txt strong { display:block; font-size: 0.85rem; }
+.ts-check-item .txt span { font-size: 0.76rem; color: var(--ink-light); }
+
+.ts-table-row { display:grid; grid-template-columns: 1.1fr 1.6fr; gap: 16px; align-items: end; margin-bottom: 10px; }
+.ts-table-row .cell-line { border-bottom: 1px dotted var(--rule); height: 20px; }
+.ts-table-head { display:grid; grid-template-columns: 1.1fr 1.6fr; gap: 16px; font-size: 0.72rem; font-weight: 700; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+
+.ts-two { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ts-two .ts-step { margin-bottom: 0; }
+.ts-step.purple .ts-step-head { background: var(--purple); }
+.ts-step.green2 .ts-step-head { background: var(--green); }
+
+.ts-optional { background: var(--amber-pale); border: 1px solid var(--amber-light); border-radius: var(--radius-sm); padding: 12px 16px; margin-bottom: 14px; }
+.ts-optional .label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); margin-bottom: 8px; }
+.ts-optional-items { display:flex; flex-wrap: wrap; gap: 14px; font-size: 0.82rem; }
+.ts-optional-items span { display:flex; align-items:center; gap: 6px; }
+.ts-optional-items .box { width: 12px; height: 12px; border: 1.5px solid var(--amber); border-radius: 3px; }
+
+.ts-reminders { background: var(--navy); color: white; border-radius: var(--radius-sm); padding: 14px 20px; display:flex; justify-content: space-around; text-align:center; }
+.ts-reminders .rem-label { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 3px; }
+.ts-reminders .rem-text { font-size: 0.85rem; font-weight: 700; }
+
+/* ============ POSTER PAGES ============ */
+.poster-page { padding: 0.55in 0.6in; }
+.poster-topbar { display:flex; height: 8px; border-radius: 999px; overflow:hidden; margin-bottom: 22px; }
+.poster-topbar::before, .poster-topbar::after { content:""; flex:1; }
+.poster-topbar::before { background: var(--navy); }
+.poster-topbar::after { background: var(--green); }
+.poster-topbar { background: var(--amber); }
+.poster-eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 6px; }
+.poster-grade { font-family: var(--font-display); font-weight: 900; font-size: 2.6rem; color: var(--navy); margin-bottom: 8px; letter-spacing: -0.01em; }
+.poster-lead { font-size: 0.86rem; font-style: italic; color: var(--ink-mid); line-height: 1.6; max-width: 680px; margin-bottom: 20px; }
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 118px repeat(3, 1fr);
+  gap: 10px;
+}
+.rail {
+  border-radius: var(--radius-sm);
+  color: white;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1;
+}
+.rail-kicker { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; margin-bottom: 6px; }
+.rail-title { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.25; }
+.rail-band { display:block; margin-top: 10px; font-size: 0.7rem; font-style: italic; color: rgba(255,255,255,0.75); line-height: 1.4; }
+.rail-navy { background: var(--navy); }
+.rail-amber { background: var(--amber); }
+.rail-green { background: var(--green); }
+
+.cell {
+  background: white;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  padding: 14px 16px;
+  min-height: 108px;
+}
+.pill { display:inline-block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; color: white; padding: 3px 9px; border-radius: 999px; margin-bottom: 8px; }
+.pill-blue { background: var(--blue); }
+.pill-amber { background: var(--amber); }
+.pill-green { background: var(--green); }
+.pill-purple { background: var(--purple); }
+.cell-bold { font-size: 0.87rem; font-weight: 600; color: var(--ink); line-height: 1.35; margin-bottom: 6px; }
+.cell-gloss { font-size: 0.76rem; font-style: italic; color: var(--ink-light); line-height: 1.45; }
+
+.poster-footer { display:flex; justify-content: space-between; font-size: 0.72rem; color: var(--ink-light); margin-top: 20px; padding-top: 10px; border-top: 1px solid var(--rule); }
+.poster-license { font-size: 0.62rem; color: var(--ink-light); text-align: center; margin-top: 6px; opacity: 0.75; }
+
+/* ============ PRINT ============ */
+@media print {
+  .print-toolbar { display: none; }
+  body { background: white; }
+  .page {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    box-shadow: none;
+    padding: 0.5in 0.6in;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+}
+@page { size: letter; margin: 0; }
+
+@media (max-width: 900px) {
+  .page { width: 100%; padding: 24px; }
+  .grid3 { grid-template-columns: 1fr; }
+  .rail { flex-direction: row; gap: 10px; align-items: center; }
+  .ts-cols3, .ts-two { grid-template-columns: 1fr; }
+  .ts-header { flex-wrap: wrap; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="print-toolbar">
+  <div class="brand"><span class="i">I</span> <span class="a">A</span><span class="m">M</span> &middot; Teacher One-Page Essentials</div>
+  <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<!-- ============ COVER ============ -->
+<section class="page cover">
+  <div class="cover-wordmark"><span class="i">I</span> <span class="a">A</span><span class="m">M</span></div>
+  <div class="cover-sub">Caring and Curious</div>
+  <div class="cover-bar"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="cover-title">Teacher One-Page Essentials</div>
+  <div class="cover-meta">Grades K&ndash;12</div>
+  <p class="cover-tagline">One Information, one Media, one AI focus &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus, for every grade level. A one-page quick reference, built to sit beside the full I AM Caring and Curious Toolkit, not replace it.</p>
+  <div class="cover-authors">
+    <strong>Developed by Glen Warren &amp; Stephanie Gamache</strong>
+    District Teacher Librarians &middot; Laguna Beach Unified School District
+  </div>
+</section>
+
+<!-- ============ CONTENTS ============ -->
+<section class="page contents">
+  <div class="contents-eyebrow">I AM Caring and Curious &middot; Teacher One-Page Essentials</div>
+  <h1>Contents</h1>
+
+  <div class="contents-group-label">Front Matter</div>
+  <div class="contents-row"><span>Cover</span><span>i</span></div>
+  <div class="contents-row"><span>How to Use This Resource</span><span>ii</span></div>
+  <div class="contents-row"><span>Teacher Think Sheet</span><span>iii</span></div>
+
+  <div class="contents-group-label">Grade-Level Pages, Kindergarten &ndash; Grade 12</div>
+  <div class="contents-row"><span>Kindergarten</span><span>4</span></div>
+  <div class="contents-row"><span>Grade 1</span><span>5</span></div>
+  <div class="contents-row"><span>Grade 2</span><span>6</span></div>
+  <div class="contents-row"><span>Grade 3</span><span>7</span></div>
+  <div class="contents-row"><span>Grade 4</span><span>8</span></div>
+  <div class="contents-row"><span>Grade 5</span><span>9</span></div>
+  <div class="contents-row"><span>Grade 6</span><span>10</span></div>
+  <div class="contents-row"><span>Grade 7</span><span>11</span></div>
+  <div class="contents-row"><span>Grade 8</span><span>12</span></div>
+  <div class="contents-row"><span>Grade 9</span><span>13</span></div>
+  <div class="contents-row"><span>Grade 10</span><span>14</span></div>
+  <div class="contents-row"><span>Grade 11</span><span>15</span></div>
+  <div class="contents-row"><span>Grade 12</span><span>16</span></div>
+</section>
+
+<!-- ============ HOW TO USE ============ -->
+<section class="page htu">
+  <div class="htu-eyebrow">I AM Caring and Curious &middot; Teacher One-Page Essentials</div>
+  <h1>How to Use This Resource</h1>
+  <p class="htu-dek">A quick-reference companion to the full I AM Caring and Curious Toolkit &mdash; not a replacement for it.</p>
+
+  <h2>What this is</h2>
+  <p>Each grade level in this packet has its own single page: the one Information, one Media, and one AI focus for that year, the one Care, one Curiosity, and one Connection capacity, and the one Identity &amp; Presence, one Privacy &amp; Agency, and one Wellbeing &amp; Intentionality responsibility. Nine anchors, at a glance, for a single grade. It&rsquo;s designed to be printed, hung in a classroom, or kept in a planning folder &mdash; something to glance at, not read cover to cover.</p>
+
+  <h2>How each page is organized</h2>
+  <p>Every grade page has the same three rows, top to bottom &mdash; and the order is deliberate, not alphabetical:</p>
+
+  <div class="layer-order">
+    <div class="lo-step lo-1">
+      <span class="lo-num">LAYER 1</span>
+      <span class="lo-name">Converging Literacies</span>
+      What a student needs to know and do.
+    </div>
+    <div class="lo-arrow">&rarr;</div>
+    <div class="lo-step lo-2">
+      <span class="lo-num">LAYER 2 &middot; THE DRIVER</span>
+      <span class="lo-name">Human-Centered Capacities</span>
+      Why a student would want to use those skills at all.
+    </div>
+    <div class="lo-arrow">&rarr;</div>
+    <div class="lo-step lo-3">
+      <span class="lo-num">LAYER 3</span>
+      <span class="lo-name">Connected World Responsibilities</span>
+      How a student carries that knowledge responsibly.
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>Layer 2 sits in the middle of every page because it drives the other two.</strong> Care, Curiosity, and Connection aren&rsquo;t a rest stop between what a student knows (Layer 1) and how they act on it (Layer 3) &mdash; they&rsquo;re the engine. A student verifies a source, questions an AI output, or reflects on their online presence <em>because</em> they care about getting it right, stay curious enough to keep asking, and feel connected enough to the people the answer affects. Take Layer 2 out and Layer 1 becomes compliance and Layer 3 becomes a rule to follow, rather than a reason worth following it.</p>
+    <p>That&rsquo;s why, on each page, the middle row isn&rsquo;t just visually centered &mdash; it&rsquo;s the row worth starting from if you only have time to look at one.</p>
+  </div>
+
+  <p>Within each cell, the bold line is the grade-level essential itself. The italic line below it is a plain-language gloss, for anyone who wants a quick reminder of what the term means, separated by a blank line so the two are easy to tell apart at a glance.</p>
+
+  <h2>How to use it</h2>
+  <ul>
+    <li>Pick one to three of the nine items for any single lesson &mdash; that&rsquo;s the limit for one shift, not for the year.</li>
+    <li>Across the whole year, the hope is that all nine get used somewhere &mdash; just spread across different lessons, not crammed into one.</li>
+    <li>Fold your pick into a lesson you&rsquo;re already teaching. This is meant to deepen existing instruction, not add a new one.</li>
+    <li>Use the Teacher Think Sheet (next page) to plan the specific shift: what stays the same, and what&rsquo;s the one small change.</li>
+    <li>Hang the grade page you teach on your wall, or keep it in your lesson-planning folder as a quick anchor.</li>
+  </ul>
+
+  <p><strong>A note on Layer 3.</strong> Identity &amp; Presence, Privacy &amp; Agency, and Wellbeing &amp; Intentionality develop across grade bands (K&ndash;2, 3&ndash;5, 6&ndash;8, 9&ndash;12) rather than changing every single year. So, for example, Grades 3, 4, and 5 share the same Layer 3 row &mdash; that&rsquo;s intentional, not a printing error. Each page still names the specific band and its motto (for example, &ldquo;Grades 3&ndash;5 &middot; I build and protect.&rdquo;).</p>
+
+  <p><strong>A note on Care and Connection.</strong> Care includes how a student feels, not only what they notice in the world around them. And Connection&rsquo;s call to understand people who see things differently is not a condition for being heard &mdash; a student who is hurting is not first asked to understand the other side.</p>
+</section>
+
+<!-- ============ THINK SHEET ============ -->
+<section class="page ts-page">
+  <div class="ts-header">
+    <div style="display:flex; align-items:center;">
+      <div class="ts-brand"><span class="i">I</span> <span class="a">A</span><span class="m">M</span></div>
+      <div class="ts-titles">
+        <div class="t1">Caring and Curious</div>
+        <div class="t2">Teacher Think Sheet</div>
+      </div>
+    </div>
+    <div class="ts-principle">
+      <div class="label">Design Principle</div>
+      <div class="text">Design with awareness of all nine &mdash; focus on one to three, intentionally.</div>
+    </div>
+  </div>
+
+  <div class="ts-step">
+    <div class="ts-step-head"><span class="badge">STEP 0</span> Start Here &mdash; Your Existing Lesson</div>
+    <div class="ts-step-body ts-cols3">
+      <div>
+        <div class="ts-field-label">Lesson / unit topic or focus:</div>
+        <div class="ts-line"></div>
+      </div>
+      <div>
+        <div class="ts-field-label">What are students already doing?</div>
+        <div class="ts-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ts-step">
+    <div class="ts-step-head"><span class="badge">STEP 1</span> Choose Your Focus <span class="note">Select 1&ndash;3 per lesson &mdash; not all 9 at once</span></div>
+    <div class="ts-step-body ts-cols3" style="grid-template-columns: 1fr 1fr 1fr;">
+      <div class="ts-layer-block l1">
+        <span class="ts-layer-title">LAYER 1 &mdash; CONVERGING LITERACIES</span>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Information</strong><span>Verify what&rsquo;s true</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Media</strong><span>Analyze why it was made</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>AI</strong><span>Interact with or evaluate AI</span></span></div>
+      </div>
+      <div class="ts-layer-block l2">
+        <span class="ts-layer-title">LAYER 2 &mdash; HUMAN-CENTERED CAPACITIES</span>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Care</strong><span>What matters, and why</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Curiosity</strong><span>Ask, and keep asking</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Connection</strong><span>Relevance to self and others</span></span></div>
+      </div>
+      <div class="ts-layer-block l3">
+        <span class="ts-layer-title">LAYER 3 &mdash; CONNECTED WORLD RESPONSIBILITIES</span>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Identity &amp; Presence</strong><span>Represent yourself responsibly</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Privacy &amp; Agency</strong><span>Informed choices about personal info</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Wellbeing &amp; Intentionality</strong><span>Use tech with awareness and purpose</span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ts-step">
+    <div class="ts-step-head"><span class="badge">STEP 2</span> Make a Small Shift <span class="note">Keep it small &mdash; if it feels like a new lesson, it&rsquo;s too much</span></div>
+    <div class="ts-step-body">
+      <div class="ts-table-head"><span>Focus area (from Step 1)</span><span>One specific thing students will DO</span></div>
+      <div class="ts-table-row"><span class="cell-line"></span><span class="cell-line"></span></div>
+      <div class="ts-table-row"><span class="cell-line"></span><span class="cell-line"></span></div>
+      <div class="ts-table-row"><span class="cell-line"></span><span class="cell-line"></span></div>
+    </div>
+  </div>
+
+  <div class="ts-two">
+    <div class="ts-step purple">
+      <div class="ts-step-head"><span class="badge">STEP 3</span> Add One Caring and Curious Moment</div>
+      <div class="ts-step-body">
+        <div class="ts-field-label">At one point, students will:</div>
+        <div class="ts-optional-items" style="margin-bottom:10px;">
+          <span><span class="box"></span>Question a claim</span>
+          <span><span class="box"></span>Compare perspectives</span>
+          <span><span class="box"></span>Investigate an idea</span>
+        </div>
+        <div class="ts-field-label">What will this look like?</div>
+        <div class="ts-line"></div>
+      </div>
+    </div>
+    <div class="ts-step green2">
+      <div class="ts-step-head"><span class="badge">STEP 4</span> Protect What Already Works</div>
+      <div class="ts-step-body">
+        <div class="ts-field-label">What stays the same?</div>
+        <div class="ts-line"></div>
+        <div class="ts-field-label">What&rsquo;s the one change you&rsquo;re making?</div>
+        <div class="ts-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ts-optional">
+    <div class="label">Optional &mdash; Teacher-Librarian Partnership</div>
+    <div class="ts-optional-items">
+      <span><span class="box"></span>Source curation</span>
+      <span><span class="box"></span>Research strategy (Information)</span>
+      <span><span class="box"></span>Media analysis (Media)</span>
+      <span><span class="box"></span>AI use / evaluation (AI)</span>
+      <span><span class="box"></span>Co-teaching support</span>
+    </div>
+  </div>
+
+  <div class="ts-reminders">
+    <div><div class="rem-label">Quick Reminder</div><div class="rem-text">Start with your lesson,<br/>not the framework.</div></div>
+    <div><div class="rem-label">Quick Reminder</div><div class="rem-text">Choose 1&ndash;3,<br/>not all.</div></div>
+    <div><div class="rem-label">Quick Reminder</div><div class="rem-text">Make one<br/>intentional shift.</div></div>
+    <div><div class="rem-label">Quick Reminder</div><div class="rem-text">Depth<br/>over coverage.</div></div>
+  </div>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Kindergarten</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Ask: “How do we know this is real?”</p>
+        <p class="cell-gloss">The first habit of information literacy: pause and ask where something came from before believing it.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Identify a logo or brand</p>
+        <p class="cell-gloss">Logos are visual clues about who made or is selling something.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Distinguish human vs. machine voice</p>
+        <p class="cell-gloss">Some voices and responses are generated by a computer, not a person.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I notice something I like or don’t like, and I can say why.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask “why” about things I see and hear.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I notice that my friend can feel differently than I do about the same thing.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades K–2 · “I share and protect.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">I am the same me whether I’m talking in person or through a screen.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">I learn what information should stay private and how to ask trusted adults for help.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I begin recognizing when and how to use technology with balance and purpose.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 1 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 1</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Find two sources for one fact</p>
+        <p class="cell-gloss">Checking more than one source builds real confidence that something is true.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Identify ads vs. stories</p>
+        <p class="cell-gloss">Telling apart messages meant to sell something from messages that just inform or entertain.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Notice when a suggestion came from a machine</p>
+        <p class="cell-gloss">Automatic suggestions, like “watch next,” come from a computer, not a person.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can point to something that matters to me and to someone else, and notice they might not be the same.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask more than one question about something that interests me.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I notice that a friend feeling differently than me doesn’t mean their feeling is wrong.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades K–2 · “I share and protect.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">I am the same me whether I’m talking in person or through a screen.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">I learn what information should stay private and how to ask trusted adults for help.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I begin recognizing when and how to use technology with balance and purpose.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 2 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 2</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Notice when two sources tell the story differently</p>
+        <p class="cell-gloss">When sources disagree, it doesn’t mean one is lying — it means we look closer.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Ask: “Who made this?”</p>
+        <p class="cell-gloss">Everything was made by someone; knowing who helps us judge why, and whether to trust it.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Notice that a machine’s suggestion isn’t always right</p>
+        <p class="cell-gloss">A computer’s suggestion is a guess, not a fact, and guesses can be wrong.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can explain, in my own words, why something matters to me.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask a follow-up question when my first question doesn’t fully answer what I wondered.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I notice that someone with a different experience might need something different than I do.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades K–2 · “I share and protect.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">I am the same me whether I’m talking in person or through a screen.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">I learn what information should stay private and how to ask trusted adults for help.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I begin recognizing when and how to use technology with balance and purpose.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 3 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 3</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Use text features to verify</p>
+        <p class="cell-gloss">Author, date, and citations are clues for judging how much to trust a source.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Ask: “Why was this made?”</p>
+        <p class="cell-gloss">Every piece of media was made for a reason: to inform, sell, persuade, or entertain.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Experiment with simple prompts</p>
+        <p class="cell-gloss">Different questions to an AI get different answers. Students are in control of what they ask.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can name a few things that matter to me and explain what they have in common.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask a question before I’m told the answer.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I notice that people from a different family or place might see the same thing differently.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 3–5 · “I build and protect.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">What I post stays, even after I’ve stopped thinking about it.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">I recognize the difference between public and private information and make safer choices online.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I reflect on how technology affects my attention, emotions, and daily habits.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 4 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 4</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Identify who published this and their purpose</p>
+        <p class="cell-gloss">Who published something shapes what they say and why. Different publishers, different agendas.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Identify persuasion</p>
+        <p class="cell-gloss">Naming techniques, like emotion, repetition, or urgency, that media uses to change what we think or do.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Ask where AI gets information</p>
+        <p class="cell-gloss">AI generates answers from patterns in its training data. It doesn’t “look things up” like a library.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I notice that the things I care about connect to people and situations beyond myself.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask questions to figure out how something works, not just what it is.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I notice that a story sounds different depending on who is telling it.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 3–5 · “I build and protect.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">What I post stays, even after I’ve stopped thinking about it.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">I recognize the difference between public and private information and make safer choices online.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I reflect on how technology affects my attention, emotions, and daily habits.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 5 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 5</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Look outside a source to see what others say about it</p>
+        <p class="cell-gloss">A source can’t fairly judge itself. Stepping outside it to check is a stronger test.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Identify missing perspectives</p>
+        <p class="cell-gloss">Every media message includes some voices and leaves others out. Asking who’s missing matters.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Identify AI errors</p>
+        <p class="cell-gloss">AI can sound confident while being wrong. Always check important answers against a reliable source.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can explain how something I care about connects to a responsibility, even a small one.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask a question, then look for more than one answer before deciding what I think.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I notice that a disagreement can come from two people caring about different things, not just seeing things differently.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 3–5 · “I build and protect.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">What I post stays, even after I’ve stopped thinking about it.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">I recognize the difference between public and private information and make safer choices online.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I reflect on how technology affects my attention, emotions, and daily habits.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 6 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 6</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Use lateral reading</p>
+        <p class="cell-gloss">Leaving a site to search about it elsewhere is faster and more reliable than reading deeply within it.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Analyze clickbait</p>
+        <p class="cell-gloss">A dramatic headline isn’t evidence of importance. Check whether the content matches the claim.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Understand algorithm sorting</p>
+        <p class="cell-gloss">What appears first online reflects predicted clicks, not truth or importance.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I notice that what I care about has started to change as I’ve grown.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask a question and then check whether my first answer actually holds up.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I notice that two people can read the same story and walk away with different lessons.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 6–8 · “I manage and evaluate.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">The version of me I show online is one I’m choosing, not the whole truth of who I am.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">What I give an AI tool becomes part of what it knows about me, even after the conversation ends.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I develop healthy boundaries with technology, including AI chatbots and companions, and recognize the difference between a conversation with a machine and a relationship with a person.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 7 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 7</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Verify quotes externally</p>
+        <p class="cell-gloss">A quote with someone’s name on it isn’t proof they said it. Trace it to the original.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Understand how platform design shapes messages</p>
+        <p class="cell-gloss">Character limits, likes, and autoplay shape what content gets made and how we engage with it.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Construct deliberate prompts and evaluate whether the output reflects your intent</p>
+        <p class="cell-gloss">Specific prompts get more useful answers, and checking the result against your goal is the real skill.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can explain how my identity and experiences shape what I care about.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask questions that challenge my own first assumption, not just other people’s.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I recognize that my own background gives me blind spots too, not just other people’s.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 6–8 · “I manage and evaluate.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">The version of me I show online is one I’m choosing, not the whole truth of who I am.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">What I give an AI tool becomes part of what it knows about me, even after the conversation ends.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I develop healthy boundaries with technology, including AI chatbots and companions, and recognize the difference between a conversation with a machine and a relationship with a person.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 8 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 8</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Check whether sources are independent</p>
+        <p class="cell-gloss">Many sites repeating one original report is still just one source, not several confirmations.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Identify logical fallacies</p>
+        <p class="cell-gloss">Naming flawed reasoning, like attacking the person or exaggerating a position, that makes weak arguments sound convincing.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Test for bias in outputs</p>
+        <p class="cell-gloss">AI can reproduce the biases in its training data. Check outputs for who benefits or is left out.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can identify a value I hold and explain where it came from.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I ask a question precisely enough that I can actually go find a real answer to it.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I recognize that my own information environment shapes my perspective just as much as anyone else’s shapes theirs.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 6–8 · “I manage and evaluate.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">The version of me I show online is one I’m choosing, not the whole truth of who I am.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">What I give an AI tool becomes part of what it knows about me, even after the conversation ends.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I develop healthy boundaries with technology, including AI chatbots and companions, and recognize the difference between a conversation with a machine and a relationship with a person.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 9 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 9</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Trace claims to original sources</p>
+        <p class="cell-gloss">Claims change as they pass through retellings. Going back to the original is the only way to be sure.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Analyze visual rhetoric</p>
+        <p class="cell-gloss">Framing, angle, and color in an image are choices that shape what we feel and believe.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Evaluate privacy trade-offs, including data as labor</p>
+        <p class="cell-gloss">Free platforms are often paid for with our attention and data. Understanding that trade-off matters.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can take on a responsibility I didn’t choose and still find a genuine reason to care about it.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I keep asking after the first answer stops being satisfying.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">A disagreement between two people can come from each having been shown a different set of facts, not from either one being unreasonable.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 9–12 · “I curate and sustain.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">The presence I build now will be read by people I never get to explain myself to.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">If a service is free, my data and attention are very likely the product being sold.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I sustain balanced technology practices, including with AI tools designed to feel like relationships, and choose human connection when that is what I actually need.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 10 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 10</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Evaluate expertise vs. influence</p>
+        <p class="cell-gloss">A large following isn’t the same as real expertise. Credentials matter more than reach.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Distinguish misinformation, disinformation, and malinformation</p>
+        <p class="cell-gloss">False-by-mistake, false-on-purpose, and true-but-harmful are different problems that need different responses.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Assess AI synthesis vs. copying</p>
+        <p class="cell-gloss">AI blends patterns from many sources rather than copying one, but that’s not the same as original thinking.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can act on something I care about, not just describe it.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I sit with a question that doesn’t have a clean answer, rather than forcing one.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I can represent someone else’s perspective accurately enough that they would recognize it as fair.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 9–12 · “I curate and sustain.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">The presence I build now will be read by people I never get to explain myself to.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">If a service is free, my data and attention are very likely the product being sold.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I sustain balanced technology practices, including with AI tools designed to feel like relationships, and choose human connection when that is what I actually need.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 11 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 11</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Evaluate quality of evidence</p>
+        <p class="cell-gloss">Not all evidence is equal. A personal story, a single study, and a research review carry different weight.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Analyze framing</p>
+        <p class="cell-gloss">Two accurate stories can feel very different depending on what’s emphasized, included, or left out.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Evaluate who benefits and who is harmed, including environmental costs</p>
+        <p class="cell-gloss">AI has real winners, losers, and environmental costs. Asking who pays is a civic question.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can weigh competing things I care about and explain which one I’m choosing to prioritize, and why.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I follow a question across more than one field or discipline to understand it fully.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I can identify what a perspective I disagree with gets right, not only what it gets wrong.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 9–12 · “I curate and sustain.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">The presence I build now will be read by people I never get to explain myself to.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">If a service is free, my data and attention are very likely the product being sold.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I sustain balanced technology practices, including with AI tools designed to feel like relationships, and choose human connection when that is what I actually need.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 12 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+<section class="page poster-page">
+    <div class="poster-topbar"></div>
+    <div class="poster-eyebrow">I AM Caring and Curious &middot; Teacher One-Page</div>
+    <h1 class="poster-grade">Grade 12</h1>
+    <p class="poster-lead">One Information, one Media, one AI skill &mdash; one Care, one Curiosity, one Connection &mdash; one Privacy, one Agency, one Wellbeing focus for the year. You don&rsquo;t need all nine at once &mdash; pick one to three and build them into an existing lesson.</p>
+
+    <div class="grid3">
+      <div class="rail rail-navy">
+        <span class="rail-kicker">LAYER 1</span>
+        <span class="rail-title">Converging<br/>Literacies</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">INFORMATION</span>
+        <p class="cell-bold">Synthesize conflicting claims</p>
+        <p class="cell-gloss">Synthesis means understanding why sources disagree and forming an honest position, not just picking a side.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">MEDIA</span>
+        <p class="cell-bold">Create and critically evaluate counter-narratives</p>
+        <p class="cell-gloss">A counter-narrative should be more honest than what it challenges, not just more emotionally persuasive.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">AI</span>
+        <p class="cell-bold">Apply human oversight, including civic and democratic accountability</p>
+        <p class="cell-gloss">“The AI decided” is never a final answer. Humans stay responsible for real-world consequences.</p>
+      </div>
+
+      <div class="rail rail-amber">
+        <span class="rail-kicker">LAYER 2</span>
+        <span class="rail-title">Human-<br/>Centered<br/>Capacities</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-amber">CARE</span>
+        <p class="cell-bold">I can explain how what I care about is starting to shape a direction for my life, not just an opinion.</p>
+        <p class="cell-gloss">The capacity to sincerely care about people, things, and how a student feels — the spark everything else starts from.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">CURIOSITY</span>
+        <p class="cell-bold">I pursue a question because it matters to me, not because it was assigned.</p>
+        <p class="cell-gloss">What caring turns into when it meets the world's questions — the active habit of asking and pursuing, not a fixed trait.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">CONNECTION</span>
+        <p class="cell-bold">I can hold a perspective I disagree with long enough to understand how someone arrived at it.</p>
+        <p class="cell-gloss">Discovering how what a student cares about and is curious about is relevant to themselves and others — without their own feelings needing to wait for that understanding first.</p>
+      </div>
+
+      <div class="rail rail-green">
+        <span class="rail-kicker">LAYER 3</span>
+        <span class="rail-title">Connected<br/>World<br/>Responsibilities</span>
+        <span class="rail-band">Grades 9–12 · “I curate and sustain.”</span>
+      </div>
+      <div class="cell">
+        <span class="pill pill-purple">IDENTITY &amp; PRESENCE</span>
+        <p class="cell-bold">The presence I build now will be read by people I never get to explain myself to.</p>
+        <p class="cell-gloss">How a student's actions and participation online shape themselves and the people around them.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-blue">PRIVACY &amp; AGENCY</span>
+        <p class="cell-bold">If a service is free, my data and attention are very likely the product being sold.</p>
+        <p class="cell-gloss">Making informed, thoughtful decisions about personal information and how it's used.</p>
+      </div>
+      <div class="cell">
+        <span class="pill pill-green">WELLBEING &amp; INTENTIONALITY</span>
+        <p class="cell-bold">I sustain balanced technology practices, including with AI tools designed to feel like relationships, and choose human connection when that is what I actually need.</p>
+        <p class="cell-gloss">Using technology with awareness, balance, and purpose, rather than by default.</p>
+      </div>
+    </div>
+
+    <div class="poster-footer">
+      <span>I AM Caring and Curious &mdash; K&ndash;12 Toolkit &middot; LBUSD</span>
+      <span>POSTER 13 OF 13 &middot; 3&times;3&times;3</span>
+    </div>
+    <p class="poster-license">CC BY-NC-SA 4.0 &middot; Attribution-NonCommercial-ShareAlike 4.0 International &middot; Glen Warren &amp; Stephanie Gamache, District Teacher Librarians, LBUSD</p>
+</section>
+
+
+</body>
+</html>
