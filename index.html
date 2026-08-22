@@ -119,9 +119,15 @@ body {
 .cover-wordmark {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 2.6rem;
   letter-spacing: -0.01em;
-  margin-bottom: 6px;
+  margin-bottom: 18px;
+}
+.cover-wordmark .letter { font-weight: 900; }
+.cover-wordmark .rest {
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(255,255,255,0.28);
 }
 .cover-wordmark .i { color: #93c5fd; }
 .cover-wordmark .a { color: #6ee7b7; }
@@ -368,8 +374,13 @@ body {
 
 <!-- ============ COVER ============ -->
 <section class="page cover">
-  <div class="cover-wordmark"><span class="i">I</span> <span class="a">A</span><span class="m">M</span></div>
-  <div class="cover-sub">Caring and Curious</div>
+  <div class="cover-wordmark">
+    <span class="letter i">I</span><span class="rest">nformation.</span>
+    <span class="letter a">A</span><span class="rest">I.</span>
+    <span class="letter m">M</span><span class="rest">edia.</span>
+  </div>
+  <div class="cover-sub">Caring and Curious <span style="color:#fcd34d;">in a Connected World</span></div>
+  <p style="font-family:var(--font-display); font-size:1.05rem; font-style:italic; color:rgba(255,255,255,0.6); margin-bottom:32px;">A Practical Toolkit for Information, AI, and Media Literacy</p>
   <div class="cover-bar"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
   <div class="cover-title">Teacher One-Page Essentials</div>
   <div class="cover-meta">Grades K&ndash;12</div>
