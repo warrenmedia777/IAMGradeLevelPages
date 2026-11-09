@@ -127,6 +127,13 @@ body { font-family: var(--font-body); color: var(--ink); background: var(--cream
 .ts-two .ts-step { margin-bottom: 0; }
 .ts-step.purple .ts-step-head { background: var(--purple); }
 .ts-step.green2 .ts-step-head { background: var(--green); }
+.ts-edtech { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+.ts-ai-row { display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; font-size:0.78rem; margin-top:2px; }
+.ts-ai-row > span { display:inline-flex; align-items:center; gap:6px; }
+.ts-ai-row .box { width:12px; height:12px; border:1.5px solid var(--ink-mid); border-radius:2px; display:inline-block; }
+.ts-ai-row .ts-inline-line { flex:1; min-width:120px; height:14px; margin:0; }
+.ts-edtech-note { font-size:0.68rem; font-style:italic; color:var(--ink-light); margin:6px 0 0; line-height:1.35; }
+.ts-l3-prompt { padding: 0 18px 12px; }
 .ts-optional { background: var(--amber-pale); border: 1px solid var(--amber-light); border-radius: var(--radius-sm); padding: 12px 16px; margin-bottom: 14px; }
 .ts-optional .label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); margin-bottom: 8px; }
 .ts-optional-items { display:flex; flex-wrap: wrap; gap: 14px; font-size: 0.82rem; }
@@ -212,6 +219,30 @@ body { font-family: var(--font-body); color: var(--ink); background: var(--cream
   .ts-line { height: 16px; margin-bottom: 6px; }
   .ts-table-row .cell-line { height: 18px; }
   .htu p, .htu li { font-size: 0.76rem; }
+  .ts-page .ts-header { padding: 8px 16px; margin-bottom: 8px; }
+  .ts-page .ts-step { margin-bottom: 7px; }
+  .ts-page .ts-two { margin-bottom: 7px; }
+  .ts-page .ts-step-body { padding: 6px 12px; }
+  .ts-page .ts-check-item { margin-bottom: 3px; }
+  .ts-page .ts-check-item .txt span { line-height: 1.25; }
+  .ts-page .ts-layer-title { padding: 4px 10px; margin-bottom: 5px; }
+  .ts-page .ts-edtech { margin-top: 6px; padding-top: 6px; }
+  .ts-page .ts-l3-prompt { padding: 0 12px 6px; }
+  .ts-page .ts-table-row { margin-bottom: 3px; }
+  .ts-page .ts-table-row .cell-line { height: 15px; }
+  .ts-page .ts-line { height: 14px; margin-bottom: 4px; }
+  .ts-page .ts-optional { padding: 6px 12px; margin-bottom: 7px; }
+  .ts-page .ts-reminders { padding: 6px 12px; }
+  .ts-page .ts-header .ts-principle { max-width: 330px; padding: 6px 12px; }
+  .ts-page .ts-header .ts-principle .text { line-height: 1.3; }
+  .ts-page .ts-check-item, .ts-page .ts-check-item .txt strong { font-size: 0.8rem; }
+  .ts-page .ts-check-item .txt span { font-size: 0.7rem; }
+  .ts-page .ts-optional .label { margin-bottom: 4px; }
+  .ts-page .ts-optional-items { gap: 6px 12px; font-size: 0.74rem; }
+  .ts-page .ts-optional .label[style] { margin-top: 6px !important; }
+  .ts-page .ts-reminders .rem-text { font-size: 0.78rem; }
+  .page.ts-page { padding: 0.25in 0.45in; }
+  .ts-page .ts-table-head { margin-bottom: 2px; }
 }
 @page { size: letter; margin: 0; }
 @media screen and (max-width: 900px) {
@@ -353,6 +384,19 @@ body { font-family: var(--font-body); color: var(--ink); background: var(--cream
         <div><div class="ts-field-label">What are students already doing?</div><div class="ts-line"></div></div>
         <div><div class="ts-field-label">What stays the same?</div><div class="ts-line"></div></div>
       </div>
+      <div class="ts-edtech">
+        <div class="ts-field-label">Educational Technologies <span style="font-weight:400; font-style:italic;">(Optional)</span>: What will students use, and what does it add that the lesson wouldn&rsquo;t have without it?</div>
+        <div class="ts-line"></div>
+        <div class="ts-ai-row">
+          <span class="ts-field-label" style="margin:0;">AI use for this lesson:</span>
+          <span><span class="box"></span>No AI</span>
+          <span><span class="box"></span>AI-Assisted</span>
+          <span><span class="box"></span>AI-Generated</span>
+          <span class="ts-field-label" style="margin:0 0 0 6px;">Allowed for:</span>
+          <span class="ts-line ts-inline-line"></span>
+        </div>
+        <p class="ts-edtech-note">Students show their AI use on the Creator Think Sheet. Local policy and family wishes decide what is allowed; this names it for students.</p>
+      </div>
     </div>
   </div>
 
@@ -373,10 +417,14 @@ body { font-family: var(--font-body); color: var(--ink); background: var(--cream
       </div>
       <div class="ts-layer-block l3">
         <span class="ts-layer-title">LAYER 3: CONNECTED WORLD RESPONSIBILITIES</span>
-        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Identity &amp; Presence</strong><span>Who you are online, including how you treat others</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Identity &amp; Presence</strong><span>Who you are, in person and online, including how you treat others</span></span></div>
         <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Privacy &amp; Agency</strong><span>Protecting your information and other people&rsquo;s</span></span></div>
-        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Wellbeing &amp; Intentionality</strong><span>Using technology with awareness and purpose</span></span></div>
+        <div class="ts-check-item"><span class="box"></span><span class="txt"><strong>Wellbeing &amp; Intentionality</strong><span>Caring for yourself with awareness and purpose, in person and online</span></span></div>
       </div>
+    </div>
+    <div class="ts-l3-prompt">
+      <div class="ts-field-label">Layer 3: Where in this lesson will students work together, discuss, share, or use online resources?</div>
+      <div class="ts-line" style="margin-bottom:0;"></div>
     </div>
   </div>
 
